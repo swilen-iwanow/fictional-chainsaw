@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fictional-web-server
+spec:
+  selector:
+    matchLabels:
+      app: fictional-web-server
+  template:
+    metadata:
+      labels:
+        app: fictional-web-server
+    spec:
+      containers:
+      - name: fictional-web-server
+        image: swillen/fictional-chainsaw:latest
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 8080
