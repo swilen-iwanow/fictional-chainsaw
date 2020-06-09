@@ -1,2 +1,3 @@
-# fictional-chainsaw
-bunch of golang code snippets
+# The fictional-chainsaw repository
+
+A bunch of golang code snippets
